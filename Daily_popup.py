@@ -39,8 +39,6 @@ dag = DAG(
     catchup=False
 )
 
-# end1 = DummyOperator(task_id='end1', dag=dag)
-
 def setup_environment():
     os.environ["PATH"] += os.pathsep + "/opt/airflow/chromedriver"  
     print(datetime.now())
